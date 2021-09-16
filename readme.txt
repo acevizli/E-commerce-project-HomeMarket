@@ -1,5 +1,17 @@
-univ_venv is for django virt. environment if you're using mac or linux.
-django_venv is for windows
+Setup:
+virtualenv myvenv
+.\myenv\Scripts\activate
+cd .\e-commerce-backend\
+pip install -r requirements.txt
+cd ..
+cd .\ecommerce-frontend\
+npm install
 
-don't forget to modify pyvenv.cfg according to
-your local before you setup python virtual env. in your local
+run:
+if not in virtualenv: 
+	.\myenv\Scripts\activate 
+cd .\e-commerce-backend\
+python manage.py runserver
+cd ..
+cd .\ecommerce-frontend\
+npm start
